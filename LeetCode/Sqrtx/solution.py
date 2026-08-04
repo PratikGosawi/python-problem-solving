@@ -3,14 +3,16 @@ class Solution:
         if x < 2:
             return x
 
-        mid = x // 2
+        left = 1
+        right = x
 
-        for i in range(1, x):
-            if i*i == x:
-                return i
-            elif i*i > x:
-                return i - 1
-        return 1
-            
+        mid = (left + right) // 2
 
-        
+        while mid != 0:
+            if mid * mid == x:
+                return mid
+            elif mid * mid > x:
+                mid -= 1
+            else:
+                return mid
+
