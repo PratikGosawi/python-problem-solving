@@ -1,5 +1,7 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
+        if x < 0:
+            return False
         ans = 0
         original_num = x
         while x != 0:
