@@ -8,7 +8,7 @@ class Solution:
             mod_val = x % 10
             ans = (ans * 10) + mod_val
             x = x // 10
-        print(ans)
+
         if ans == original_num:
             return True
         else:
