@@ -9,10 +9,4 @@ class Solution:
             ans = (ans * 10) + mod_val
             x = x // 10
 
-        if ans == original_num:
-            return True
-        else:
-            return False
-
-        
-        
+        return ans == original_num
