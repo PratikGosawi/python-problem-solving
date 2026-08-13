@@ -2,4 +2,4 @@
 
 **Difficulty:** See LeetCode for difficulty
 
-**Stats:** Runtime: 2741 ms | Memory: 19.4 MB
+**Stats:** Runtime: 118 ms | Memory: 19.4 MB
