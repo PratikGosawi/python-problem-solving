@@ -4,7 +4,6 @@ class Solution:
             return 0
 
         count = 0
-        result = 1
 
         while n != 0:
             if n % 5 == 0:
@@ -14,7 +13,6 @@ class Solution:
                     count += 1
                     num = num / 5
 
-            result *= n
             n -= 1
         return count
 
