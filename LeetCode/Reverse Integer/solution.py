@@ -9,7 +9,7 @@ class Solution:
             result = (result * 10) + mod_num
             if result > 2**31:
                 return 0
-            x = int(x / 10)
+            x = x // 10
             
         
         if num < 0:
