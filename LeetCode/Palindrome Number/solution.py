@@ -7,7 +7,7 @@ class Solution:
         while x != 0:
             mod_val = x % 10
             ans = (ans * 10) + mod_val
-            x = int(x / 10)
+            x = x // 10
         print(ans)
         if ans == original_num:
             return True
