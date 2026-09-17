@@ -1,17 +1,23 @@
 class Solution:
+    seen = {0:0, 1:1}
     def fib(self, n: int) -> int:
+        global seen
+        if n in self.seen:
+            return self.seen[n]
 
-        if n == 0:
-            return 0
+        self.seen[n] = self.fib(n-1) + self.fib(n-2)
+        return self.seen[n]
+
+
+
+        # if n == 0:
+        #     return 0
         
-        if n == 1:
-            return 1
+        # if n == 1:
+        #     return 1
 
-        return (self.fib(n-1) + self.fib(n-2))
+        # return (self.fib(n-1) + self.fib(n-2))
     
-
-
-
 
         # if n == 0:
         #     return 0
